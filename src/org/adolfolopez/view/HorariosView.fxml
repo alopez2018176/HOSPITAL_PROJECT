@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adolfolopez.controller.HorariosController">
+   <children>
+      <Label layoutX="218.0" layoutY="14.0" text="HORARIOS" textFill="#535e70">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="112.0" fitWidth="122.0" layoutX="413.0" layoutY="22.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/horario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="57.0" text="Horario de Inicio:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="53.0" prefHeight="25.0" prefWidth="206.0" />
+      <TextField layoutX="176.0" layoutY="91.0" prefHeight="25.0" prefWidth="206.0" />
+      <Label layoutX="65.0" layoutY="95.0" text="Horario de Salida:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="103.0" layoutY="153.0" mnemonicParsing="false" text="Lunes">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="167.0" layoutY="153.0" mnemonicParsing="false" text="Martes">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="244.0" layoutY="153.0" mnemonicParsing="false" text="Miercoles">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="326.0" layoutY="153.0" mnemonicParsing="false" text="Jueves">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="391.0" layoutY="153.0" mnemonicParsing="false" text="Viernes">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </CheckBox>
+      <TableView layoutX="22.0" layoutY="185.0" prefHeight="200.0" prefWidth="506.0">
+        <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="54.0" text="Codigo" />
+          <TableColumn prefWidth="79.0" text="Hora Inicio" />
+          <TableColumn text="Hora Salida" />
+            <TableColumn prefWidth="54.0" text="Lunes" />
+            <TableColumn prefWidth="59.0" text="Martes" />
+            <TableColumn prefWidth="68.0" text="Miercoles" />
+            <TableColumn minWidth="0.0" prefWidth="54.0" text="Jueves" />
+            <TableColumn prefWidth="56.0" text="Viernes" />
+        </columns>
+      </TableView>
+      <Label layoutX="65.0" layoutY="131.0" text="Seleccione los dias a laborar:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNuevo" layoutX="68.0" layoutY="391.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="91.0" text="NUEVO">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="182.0" layoutY="391.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="91.0" text="ELIMINAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="296.0" layoutY="391.0" mnemonicParsing="false"  prefHeight="38.0" prefWidth="91.0" text="EDITAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="405.0" layoutY="391.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" text="REPORTE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

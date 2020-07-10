@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adolfolopez.controller.ContactoUrgenciaController">
+   <children>
+      <Label layoutX="173.0" layoutY="14.0" text="Contactos De Urgencias" textFill="#33567f">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="119.0" fitWidth="107.0" layoutX="460.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/contactoUrgencia.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnReporte" layoutX="424.0" layoutY="420.0" mnemonicParsing="false" onAction="#reporte" prefHeight="38.0" prefWidth="91.0" text="REPORTE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="315.0" layoutY="420.0" mnemonicParsing="false" onAction="#editar" prefHeight="38.0" prefWidth="91.0" text="EDITAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="201.0" layoutY="420.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="91.0" text="ELIMINAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNuevo" layoutX="87.0" layoutY="420.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="91.0" text="NUEVO">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="58.0" prefHeight="16.0" prefWidth="64.0" text="NOMBRES:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombres" editable="false" layoutX="118.0" layoutY="54.0" prefHeight="25.0" prefWidth="322.0" />
+      <TextField fx:id="txtApellidos" editable="false" layoutX="118.0" layoutY="95.0" prefHeight="25.0" prefWidth="322.0" />
+      <Label layoutX="48.0" layoutY="99.0" text="APELLIDOS:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="140.0" text="NUMERO DE CONTACTO:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumeroContacto" editable="false" layoutX="120.0" layoutY="162.0" onKeyTyped="#soloNumeros" prefHeight="25.0" prefWidth="322.0" />
+      <ComboBox fx:id="cmbCodigoPaciente" layoutX="118.0" layoutY="221.0" prefWidth="150.0" />
+      <Label layoutX="47.0" layoutY="199.0" text="CODIGO DEL PACIENTE:">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblContactosUrgencias" layoutX="41.0" layoutY="258.0" prefHeight="150.0" prefWidth="521.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="65.0" text="Codigo" />
+          <TableColumn fx:id="colNombres" prefWidth="121.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="114.0" text="Apellidos" />
+            <TableColumn fx:id="colNumeroContacto" prefWidth="117.0" text="Numero Contacto" />
+            <TableColumn fx:id="colCodigoPaciente" prefWidth="103.0" text="Codigo Paciente" />
+        </columns>
+      </TableView>
+      <Button layoutX="393.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#ventanaPacientes" text="REGRESAR A PACIENTES">
+         <font>
+            <Font name="Rockwell Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

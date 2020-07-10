@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adolfolopez.controller.MedicosController">
+   <children>
+      <TableView fx:id="tblMedicos" layoutX="31.0" layoutY="266.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="851.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="68.0" text="CODIGO" />
+            <TableColumn fx:id="colLicenciaMedica" prefWidth="125.0" text="LICENCIA MEDICA" />
+          <TableColumn fx:id="colNombres" prefWidth="144.0" text="NOMBRES" />
+            <TableColumn fx:id="colApellidos" prefWidth="153.0" text="APELLIDOS" />
+            <TableColumn fx:id="colHoraEntrada" prefWidth="86.0" text="ENTRADA" />
+            <TableColumn fx:id="colHoraSalida" prefWidth="76.0" text="SALIDA" />
+            <TableColumn fx:id="colTurno" prefWidth="112.0" text="TURNO MAXIMO" />
+            <TableColumn fx:id="colSexo" prefWidth="86.0" text="SEXO" />
+        </columns>
+      </TableView>
+      <Label layoutX="358.0" layoutY="14.0" text="MEDICOS">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="58.0" text="LICENCIA MEDICA">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLicenciaMedica" editable="false" layoutX="184.0" layoutY="54.0" onKeyTyped="#soloNumeros" prefHeight="25.0" prefWidth="230.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtNombres" editable="false" layoutX="184.0" layoutY="88.0" prefHeight="25.0" prefWidth="465.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <Label layoutX="38.0" layoutY="92.0" text="NOMBRES">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtApellidos" editable="false" layoutX="184.0" layoutY="128.0" prefHeight="25.0" prefWidth="465.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <Label layoutX="38.0" layoutY="132.0" text="APELLIDOS">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="171.0" text="HORA ENTRADA">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraEntrada" editable="false" layoutX="184.0" layoutY="167.0" prefHeight="25.0" prefWidth="98.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtHoraSalida" editable="false" layoutX="409.0" layoutY="167.0" prefHeight="25.0" prefWidth="98.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <Label layoutX="298.0" layoutY="171.0" text="HORA SALIDA">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTurno" editable="false" layoutX="659.0" layoutY="167.0" prefHeight="25.0" prefWidth="98.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <Label layoutX="531.0" layoutY="171.0" text="TURNO MAXIMO">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="216.0" text="SEXO">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSexo" editable="false" layoutX="183.0" layoutY="212.0" prefHeight="25.0" prefWidth="230.0">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></TextField>
+      <Button fx:id="btnNuevo" layoutX="109.0" layoutY="479.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="37.0" prefWidth="118.0" text="NUEVO">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="255.0" layoutY="479.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="37.0" prefWidth="118.0" text="ELIMINAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnEditar" layoutX="403.0" layoutY="479.0" mnemonicParsing="false" onAction="#editar" prefHeight="37.0" prefWidth="118.0" text="EDITAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnReporte" layoutX="560.0" layoutY="479.0" mnemonicParsing="false" onAction="#reporte" prefHeight="37.0" prefWidth="118.0" text="REPORTE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="157.0" fitWidth="139.0" layoutX="747.0" layoutY="12.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/medicos.png" />
+         </image></ImageView>
+      <Button layoutX="533.0" layoutY="213.0" mnemonicParsing="false" onAction="#ventanaTMedicos" prefHeight="24.0" prefWidth="230.0" text="TELEFONOS MEDICOS">
+         <font>
+            <Font name="Rockwell Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

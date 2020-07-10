@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adolfolopez.controller.AcercaDeController">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="360.0">
+         <image>
+            <Image url="@../images/49709678-icono-de-la-línea-estetoscopio-para-web-móvil-y-la-infografía-ligero-del-vector-icono-azul-aislado-sobre-fo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/descarga.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="196.0" layoutY="452.0" mnemonicParsing="false" onAction="#llamarEscenarioPrincipal" text="Regresar al Menu Principal" />
+      <ImageView fitHeight="183.0" fitWidth="144.0" layoutX="111.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/IMG_20190522_150022330.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="303.0" text="NOMBRES:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="118.0" layoutY="299.0" prefHeight="25.0" prefWidth="157.0" text="Adolfo Fernando " />
+      <Label layoutX="42.0" layoutY="335.0" text="APELLIDOS:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="118.0" layoutY="331.0" prefHeight="25.0" prefWidth="157.0" text="Lopez Lopez" />
+      <Label layoutX="42.0" layoutY="373.0" text="CORREO ELECTRONICO:" textFill="#f2f2f2">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="118.0" layoutY="397.0" prefHeight="25.0" prefWidth="170.0" text="adolfoferlopez@hotmail.com" />
+   </children>
+</AnchorPane>

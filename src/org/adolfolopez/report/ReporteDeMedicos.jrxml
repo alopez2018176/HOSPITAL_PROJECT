@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteDeMedicos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="57b6025f-67bb-4336-a9be-1de7474f27a6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1034"/>
+	<queryString>
+		<![CDATA[call sp_ListarMedicos]]>
+	</queryString>
+	<field name="codigoMedico" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="licenciaMedica" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaEntrada" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaSalida" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="turnoMaximo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="26" y="124" width="506" height="479" uuid="2b77b7cc-00a3-49fd-9bc5-5113738243b5"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\Captura.PNG"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="192" y="535" width="326" height="146" uuid="71a32d1b-bf0f-4450-bf2d-47ff2e1572ff"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\firmaDirectos.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="172" y="0" width="434" height="79" uuid="be13439f-1076-423d-a388-917b4bc23816"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\Eslogan hospital.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="52" y="0" width="131" height="79" uuid="175215f0-9aff-4c01-8dca-d25bb8d97dd5"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\iconoBarra.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<image>
+				<reportElement x="210" y="5" width="233" height="27" uuid="c78f5e60-9605-4cd3-9a81-026d4151d21d"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\ReporteMedicos.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="4" width="555" height="26" uuid="c152c99d-dc70-4a48-af38-8281b7ee4569"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="11" width="100" height="20" uuid="487de659-2259-459c-ae84-166c2c96361d"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Médico]]></text>
+			</staticText>
+			<line>
+				<reportElement x="85" y="5" width="1" height="29" uuid="af448cb3-66b5-42bb-8b75-61b6ba7a6603"/>
+			</line>
+			<staticText>
+				<reportElement x="92" y="11" width="100" height="20" uuid="5e06145e-0079-4367-a8a3-8c097eacc714"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Licencia Médica]]></text>
+			</staticText>
+			<line>
+				<reportElement x="179" y="5" width="1" height="29" uuid="fb23e613-0d6b-4f8e-980c-87255a9b898f"/>
+			</line>
+			<staticText>
+				<reportElement x="197" y="11" width="100" height="20" uuid="9aa75988-d0e1-498c-b9c6-75555b9bf37d"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<line>
+				<reportElement x="271" y="4" width="1" height="29" uuid="90014bb5-086d-40b5-8dd3-78a6d23cb75d"/>
+			</line>
+			<staticText>
+				<reportElement x="291" y="10" width="100" height="20" uuid="d438c66b-884e-4ac6-b796-6efb1999ede3"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<line>
+				<reportElement x="358" y="4" width="1" height="29" uuid="7544caa7-21cf-4ef0-87db-c9091f42905b"/>
+			</line>
+			<staticText>
+				<reportElement x="363" y="11" width="100" height="20" uuid="884ca461-5440-4aec-ae20-d352fce850dc"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[H. Entrada]]></text>
+			</staticText>
+			<line>
+				<reportElement x="420" y="5" width="1" height="29" uuid="977db19d-6fdb-4fa3-aa1d-e248b9e7a6eb"/>
+			</line>
+			<staticText>
+				<reportElement x="425" y="10" width="100" height="20" uuid="16cf1816-ec3f-49ef-98b3-285e0b87bbc8"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[H. Salida]]></text>
+			</staticText>
+			<line>
+				<reportElement x="474" y="4" width="1" height="29" uuid="1ae3ced6-90d2-44c0-b615-a6905f708fb9"/>
+			</line>
+			<staticText>
+				<reportElement x="478" y="10" width="100" height="20" uuid="04c5d0df-22e6-41ae-b930-95ad38d22a46"/>
+				<textElement>
+					<font fontName="Rockwell" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Turno Máximo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="41" y="-1" width="100" height="20" uuid="10cdfb5e-f44f-43ea-9701-c7502e72a8e9"/>
+				<textFieldExpression><![CDATA[$F{codigoMedico}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="85" y="-3" width="1" height="32" uuid="243edc96-09a4-4035-bcd7-2baed6780928"/>
+			</line>
+			<textField>
+				<reportElement x="107" y="0" width="100" height="20" uuid="11c51c5e-f38a-46a0-ba42-6771d889615a"/>
+				<textFieldExpression><![CDATA[$F{licenciaMedica}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="179" y="-3" width="1" height="32" uuid="845b2414-ff47-48a6-b5da-60115db59697"/>
+			</line>
+			<textField>
+				<reportElement x="183" y="0" width="100" height="20" uuid="f8d3877e-75bc-47f3-994e-4969f05f8627"/>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="1" width="100" height="20" uuid="d15920d3-0aa1-46e5-886d-59a283a7584d"/>
+				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="271" y="-3" width="1" height="32" uuid="c558c891-6960-43cb-bec6-a9c6eca06264"/>
+			</line>
+			<line>
+				<reportElement x="358" y="-3" width="1" height="32" uuid="fdf4d7c4-f0e5-430e-95e8-9c969a3712fe"/>
+			</line>
+			<textField>
+				<reportElement x="372" y="-1" width="100" height="20" uuid="d94965c6-0235-4939-8377-a6912510fced"/>
+				<textFieldExpression><![CDATA[$F{horaEntrada}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="420" y="-2" width="1" height="32" uuid="7778225e-dea9-495b-b5a4-cb8935ad1b76"/>
+			</line>
+			<textField>
+				<reportElement x="432" y="0" width="100" height="20" uuid="bed32c3c-0867-4270-b120-e42aee71147f"/>
+				<textFieldExpression><![CDATA[$F{horaSalida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="0" width="100" height="20" uuid="a3c76b6c-5e77-4d3f-b980-799d1af0db5c"/>
+				<textFieldExpression><![CDATA[$F{turnoMaximo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="474" y="-2" width="1" height="32" uuid="fc64ef8f-14da-4ac0-9250-d7c6317f834e"/>
+			</line>
+			<line>
+				<reportElement x="2" y="28" width="553" height="1" forecolor="#009999" uuid="34357213-84ae-4284-a49e-57128a07808b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="82" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="190" splitType="Stretch">
+			<image>
+				<reportElement x="-31" y="0" width="766" height="190" uuid="b5cfc84f-5813-4097-bdf0-b0b1ac61fbd7"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\lineas-png-azules.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

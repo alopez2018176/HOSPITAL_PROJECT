@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportePacientes" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0b09f54d-12c8-40ba-89fd-70f9671b8490">
+	<property name="ireport.zoom" value="0.6830134553650705"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[Select Pacientes.codigoPaciente, Pacientes.dpi,
+	Pacientes.apellidos,Pacientes.nombres,
+	Pacientes.fechaNacimiento,Pacientes.edad,
+	Pacientes.direccion,ContactoUrgencia.numeroContacto
+		from Pacientes INNER JOIN  ContactoUrgencia on 		 Pacientes.codigoPaciente =ContactoUrgencia.codigoPaciente;]]>
+	</queryString>
+	<field name="codigoPaciente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dpi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaNacimiento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edad" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="555" splitType="Stretch">
+			<image>
+				<reportElement x="180" y="38" width="462" height="375" uuid="cb636064-4567-4843-b31e-5ff079e9d253"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\Captura2.PNG"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="661" y="11" width="485" height="108" uuid="f9ad319e-513c-4d77-b223-c5da3b72b2b7"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\firmaDirectos.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<image>
+				<reportElement x="155" y="0" width="653" height="118" uuid="c06f0594-34d9-4a0d-847e-b356e9205964"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\Eslogan hospital.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="17" y="0" width="162" height="118" uuid="54769602-1368-4ac0-92b1-c923004a350d"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\iconoBarra.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<image>
+				<reportElement x="265" y="5" width="283" height="38" uuid="1e53e866-9431-42e3-988c-49e9d4406c22"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\ReportePacientes.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="1" width="802" height="31" uuid="bf9d9f5f-2a1c-4780-bece-af1d011ee7a1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="8" width="100" height="20" uuid="253d50bb-8a07-4513-889a-31de18eeb18a"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="8" width="20" height="20" uuid="09062b01-9b9d-449d-9acd-64f48ba75261"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DPI]]></text>
+			</staticText>
+			<line>
+				<reportElement x="75" y="2" width="1" height="29" uuid="3256a3ae-0912-4e06-8012-f643eeb9de02"/>
+			</line>
+			<line>
+				<reportElement x="150" y="2" width="1" height="29" uuid="98c09c53-e6b6-42cf-ba8a-2c8d357e1219"/>
+			</line>
+			<staticText>
+				<reportElement x="179" y="8" width="37" height="20" uuid="2a9abb3f-04a0-4284-a7fc-a5f5f2b31cf1"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<line>
+				<reportElement x="244" y="2" width="1" height="29" uuid="2e404ecc-e6f2-4c6b-b9d9-09fbf5b07aba"/>
+			</line>
+			<staticText>
+				<reportElement x="270" y="8" width="50" height="20" uuid="ddf86086-02ff-4c52-9779-97be654460cb"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<line>
+				<reportElement x="328" y="2" width="1" height="29" uuid="430e5a31-d565-42ee-906b-91099eebfa66"/>
+			</line>
+			<staticText>
+				<reportElement x="337" y="8" width="100" height="20" uuid="2908c5cc-17d1-4a91-8b5f-cdc5a5ae8c65"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Nacimiento]]></text>
+			</staticText>
+			<line>
+				<reportElement x="429" y="2" width="1" height="29" uuid="9f36d5b8-f361-4e2d-a8ff-2f96d32b6dd8"/>
+			</line>
+			<staticText>
+				<reportElement x="438" y="8" width="100" height="20" uuid="7e247e01-0a1d-4942-898a-d16fd28f2761"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Edad]]></text>
+			</staticText>
+			<line>
+				<reportElement x="467" y="2" width="1" height="29" uuid="534e2469-6ca3-402d-bb35-e6522c4910f8"/>
+			</line>
+			<staticText>
+				<reportElement x="494" y="8" width="100" height="20" uuid="c62879ec-9e7f-4cbf-bc96-3a7183904865"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<line>
+				<reportElement x="565" y="2" width="1" height="29" uuid="fc9ddf3e-4afd-476b-9c4e-baa9cc71a166"/>
+			</line>
+			<staticText>
+				<reportElement x="574" y="8" width="113" height="20" uuid="38cdd66c-f5bc-42df-90f7-786be79d6941"/>
+				<textElement>
+					<font fontName="Rockwell Condensed" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contacto de Urgencia]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<textField>
+				<reportElement x="32" y="5" width="100" height="20" uuid="dddd05fe-d224-45c6-a444-ce3727d2d2e9"/>
+				<textFieldExpression><![CDATA[$F{codigoPaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="5" width="100" height="20" uuid="4e006820-bc8b-40a8-b947-4330f1b3bfd9"/>
+				<textFieldExpression><![CDATA[$F{dpi}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="75" y="1" width="1" height="32" uuid="c0721fd9-5af5-48ff-b752-f46c10c98a56"/>
+			</line>
+			<textField>
+				<reportElement x="155" y="5" width="100" height="20" uuid="87aaef4b-a0a5-434b-82ce-7d0eeeab2522"/>
+				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="150" y="1" width="1" height="32" uuid="e7926610-490f-4e7a-9837-76c55842bd2d"/>
+			</line>
+			<line>
+				<reportElement x="244" y="1" width="1" height="32" uuid="fbca6618-b5c3-4ba9-bf0f-d1a636293a63"/>
+			</line>
+			<textField>
+				<reportElement x="251" y="6" width="100" height="20" uuid="0881e13e-9880-4f5a-a706-559787888752"/>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="328" y="1" width="1" height="32" uuid="3343b279-b264-4764-a9ed-04fcdcb86453"/>
+			</line>
+			<textField>
+				<reportElement x="339" y="6" width="100" height="20" uuid="7d158f83-e1d6-47cd-b5d4-3dfb2cd7c368"/>
+				<textFieldExpression><![CDATA[$F{fechaNacimiento}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="429" y="1" width="1" height="32" uuid="4d1aae73-4e85-4b69-9f9e-63462ac62a1b"/>
+			</line>
+			<textField>
+				<reportElement x="441" y="6" width="100" height="20" uuid="cb683842-dc54-4e67-a63e-229a827686e0"/>
+				<textFieldExpression><![CDATA[$F{edad}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="467" y="-1" width="1" height="32" uuid="36cb4943-2151-4956-a154-96563eb42a96"/>
+			</line>
+			<textField>
+				<reportElement x="474" y="6" width="100" height="20" uuid="dfd18125-ce61-42c5-a89e-f2ce3d5a581c"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="565" y="1" width="1" height="32" uuid="ea280ced-ef02-49b3-be15-205d6e401127"/>
+			</line>
+			<textField>
+				<reportElement x="574" y="6" width="100" height="20" uuid="69f857ba-4ca0-4449-87f4-37d6b11a200c"/>
+				<textFieldExpression><![CDATA[$F{numeroContacto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="44" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="290" splitType="Stretch">
+			<image>
+				<reportElement x="-23" y="26" width="991" height="264" uuid="e2b15740-c7df-4d3a-9614-0e18435dee93"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario Dell\\Desktop\\Proyecto Hospital\\HospitalInfectologia2018176\\src\\org\\adolfolopez\\images\\lineas-png-azules.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

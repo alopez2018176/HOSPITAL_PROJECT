@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adolfolopez.controller.AreasController">
+   <children>
+      <Button fx:id="btnReporte" layoutX="381.0" layoutY="239.0" mnemonicParsing="false" onAction="#reporte" prefHeight="38.0" prefWidth="91.0" text="REPORTE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="272.0" layoutY="239.0" mnemonicParsing="false" onAction="#editar" prefHeight="38.0" prefWidth="91.0" text="EDITAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="158.0" layoutY="239.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="91.0" text="ELIMINAR">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNuevo" layoutX="44.0" layoutY="239.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="91.0" text="NUEVO">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="76.0" layoutX="406.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/areas.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblAreas" layoutX="45.0" layoutY="115.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="112.0" prefWidth="426.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="74.0" text="Codigo" />
+          <TableColumn fx:id="colNombreArea" prefWidth="354.0" text="Nombre Area" />
+        </columns>
+      </TableView>
+      <Label layoutX="214.0" layoutY="14.0" text="AREAS" textFill="#0706ba">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" editable="false" layoutX="98.0" layoutY="78.0" prefHeight="25.0" prefWidth="303.0" />
+      <Label layoutX="40.0" layoutY="60.0" text="NOMBRE:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
